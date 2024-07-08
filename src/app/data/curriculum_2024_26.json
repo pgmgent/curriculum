@@ -1,0 +1,270 @@
+{
+    "id": "curriculum_2024_26",
+    "name": "Curriculum 2024-26",
+    "description": "Curriculum for the 2024-26 school years",
+    "courses": [
+        {
+            "name": "IT Professional",
+            "description": "Learn to be a professional IT person",
+            "credits": 4,
+            "contactHoursPerWeek": 4,
+            "period": "1+2",
+            "semester": 1,
+            "learningLineCode": "ics",
+            "lecturers": ["IVC", "CGR", "TBD"]
+        },
+        {
+            "name": "IT Portfolio",
+            "description": "Learn to create a portfolio",
+            "credits": 5,
+            "contactHoursPerWeek": 4,
+            "period": "3+4",
+            "semester": 2,
+            "learningLineCode": "ics",
+            "lecturers": ["IVC", "CGR"]
+        },
+        {
+            "name": "IT Exploration",
+            "description": "Explore the IT field",
+            "credits": 6,
+            "contactHoursPerWeek": 4,
+            "period": "5+6",
+            "semester": 3,
+            "learningLineCode": "ics",
+            "lecturers": ["PDP", "CGR"]
+        },
+        {
+            "name": "Data Management 1",
+            "description": "Learn to manage data",
+            "credits": 3,
+            "contactHoursPerWeek": 4,
+            "period": 1,
+            "semester": 1,
+            "learningLineCode": "dtm",
+            "lecturers": ["DDW"]
+        },
+        {
+            "name": "Data Management 2",
+            "description": "Learn to manage data",
+            "credits": 3,
+            "contactHoursPerWeek": 4,
+            "period": 3,
+            "semester": 2,
+            "learningLineCode": "dtm",
+            "lecturers": ["AGB", "NMN"]
+        },
+        {
+            "name": "Data Management",
+            "description": "Learn to manage data",
+            "credits": 6,
+            "contactHoursPerWeek": 8,
+            "period": 5,
+            "semester": 3,
+            "learningLineCode": "dtm",
+            "lecturers": ["DDW"]
+        },
+        {
+            "name": "Content Management Systems",
+            "description": "Learn to manage content",
+            "credits": 3,
+            "contactHoursPerWeek": 4,
+            "period": 6,
+            "semester": 3,
+            "learningLineCode": "dtm",
+            "lecturers": ["DDW"]
+        },
+        {
+            "name": "Web 1",
+            "subName": "Essentials",
+            "description": "Learn the essentials of web development",
+            "credits": 4,
+            "contactHoursPerWeek": 6,
+            "period": 1,
+            "semester": 1,
+            "learningLineCode": "cwc",
+            "lecturers": ["EVR", "MSP"]
+        },
+        {
+            "name": "Web 2",
+            "subName": "Intermediate",
+            "description": "Learn intermediate web development",
+            "credits": 4,
+            "contactHoursPerWeek": 6,
+            "period": 2,
+            "semester": 1,
+            "learningLineCode": "cwc",
+            "lecturers": ["EVR", "MVP"]
+        },
+        {
+            "name": "Web 3",
+            "subName": "Advanced",
+            "description": "Learn advanced web development",
+            "credits": 4,
+            "contactHoursPerWeek": 6,
+            "period": 3,
+            "semester": 2,
+            "learningLineCode": "cwc",
+            "lecturers": ["AGB", "MVP"]
+        },
+        {
+            "name": "Web 4",
+            "subName": "Web Animations & Interactions",
+            "description": "Learn to create web animations and interactions",
+            "credits": 6,
+            "contactHoursPerWeek": 8,
+            "period": 4,
+            "semester": 2,
+            "learningLineCode": "cwc",
+            "lecturers": ["AGB"],
+            "specializationCode": "ifd"
+        },
+        {
+            "name": "Web 5",
+            "subName": "Web Frameworks",
+            "description": "Learn to create web applications with frameworks",
+            "credits": 6,
+            "contactHoursPerWeek": 8,
+            "period": 5,
+            "semester": 3,
+            "learningLineCode": "cwc",
+            "lecturers": ["MVP"],
+            "specializationCode": "ifd"
+        },
+        {
+            "name": "Web 6",
+            "subName": "Creative Coding",
+            "description": "Learn to create creative web applications",
+            "credits": 6,
+            "contactHoursPerWeek": 8,
+            "period": 6,
+            "semester": 3,
+            "learningLineCode": "cwc",
+            "lecturers": ["JLB"],
+            "specializationCode": "ifd"
+        },
+        {
+            "name": "Programming 1",
+            "subName": "Essentials",
+            "description": "Learn the essentials of web development",
+            "credits": 5,
+            "contactHoursPerWeek": 8,
+            "period": 1,
+            "semester": 1,
+            "learningLineCode": "cmp",
+            "lecturers": ["MVP", "NMN"]
+        },
+        {
+            "name": "Programming 2",
+            "subName": "Intermediate",
+            "description": "Learn intermediate web development",
+            "credits": 5,
+            "contactHoursPerWeek": 8,
+            "period": 2,
+            "semester": 1,
+            "learningLineCode": "cmp",
+            "lecturers": ["AGB", "NMN"]
+        },
+        {
+            "name": "Programming 3",
+            "subName": "Advanced",
+            "description": "Learn advanced web development",
+            "credits": 5,
+            "contactHoursPerWeek": 8,
+            "period": 3,
+            "semester": 2,
+            "learningLineCode": "cmp",
+            "lecturers": ["FRG", "EVR"]
+        },
+        {
+            "name": "Programming 4",
+            "subName": "JAMstack",
+            "description": "Learn to create JAMstack web applications",
+            "credits": 6,
+            "contactHoursPerWeek": 8,
+            "period": 4,
+            "semester": 2,
+            "learningLineCode": "cmp",
+            "lecturers": ["EVR"],
+            "specializationCode": "cad"
+        },
+        {
+            "name": "Programming 5",
+            "subName": "Full-stack",
+            "description": "Learn to create full-stack web applications",
+            "credits": 6,
+            "contactHoursPerWeek": 8,
+            "period": 5,
+            "semester": 3,
+            "learningLineCode": "cmp",
+            "lecturers": ["JLB"],
+            "specializationCode": "cad"
+        },
+        {
+            "name": "Programming 6",
+            "subName": "Mobile",
+            "description": "Learn to create mobile applications",
+            "credits": 6,
+            "contactHoursPerWeek": 8,
+            "period": 6,
+            "semester": 3,
+            "learningLineCode": "cmp",
+            "lecturers": ["MVP"],
+            "specializationCode": "cad"
+        },
+        {
+            "name": "@Work 1",
+            "subName": "Static Web Projects",
+            "description": "Work on static web projects",
+            "credits": 6,
+            "contactHoursPerWeek": 10,
+            "period": 2,
+            "semester": 1,
+            "learningLineCode": "atw",
+            "lecturers": ["MSP"]
+        },
+        {
+            "name": "@Work 2",
+            "subName": "Dynamic Web Projects",
+            "description": "Work on dynamic web projects",
+            "credits": 6,
+            "contactHoursPerWeek": 10,
+            "period": 4,
+            "semester": 2,
+            "learningLineCode": "atw",
+            "lecturers": ["FRG", "NMN"]
+        },
+        {
+            "name": "@Work 3",
+            "subName": "Multidisciplinary Web Projects",
+            "description": "Work on multidisciplinary web projects",
+            "credits": 6,
+            "contactHoursPerWeek": 10,
+            "period": 6,
+            "semester": 3,
+            "learningLineCode": "atw",
+            "lecturers": ["DDW", "JLB"]
+        },
+        {
+            "name": "@Work 4",
+            "subName": "Graduation Project",
+            "description": "Work on a graduation project",
+            "credits": 9,
+            "contactHoursPerWeek": 38,
+            "period": 7,
+            "semester": 4,
+            "learningLineCode": "atw",
+            "lecturers": ["IDC", "ISB", "IVC", "CGR"]
+        },
+        {
+            "name": "@Work 5",
+            "subName": "Internship",
+            "description": "Internship at a company",
+            "credits": 18,
+            "contactHoursPerWeek": 38,
+            "period": 8,
+            "semester": 4,
+            "learningLineCode": "atw",
+            "lecturers": ["MVP", "AGB", "JLB", "TBD"]
+        }
+    ]
+}

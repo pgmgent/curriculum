@@ -1,0 +1,181 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.curriculum {
+  width: 98vw;
+  margin: 0 auto;
+}
+
+.curriculum__header-container {
+  @apply w-full;
+}
+
+.curriculum__courses-container {
+  grid-template-columns: [p1] 1fr [p2] 1fr [p3] 1fr [p4] 1fr [p5] 1fr [p6] 1fr [p7] 1fr [p8] 1fr;
+  grid-template-rows: [year] auto [sem] auto [per] auto [ics] auto [dtm] auto [cwc] auto [cmp] auto [atw] auto;
+  @apply grid gap-2 mt-2 w-full;
+}
+
+.header__year {
+  @apply flex flex-row flex-wrap items-center justify-center text-center font-semibold text-base bg-ahs_black-200 text-ahs_black-700 rounded-md;
+}
+
+.header__semester {
+  @apply flex flex-row flex-wrap items-center justify-center text-center font-semibold text-base bg-ahs_black-200 text-ahs_black-700 rounded-md;
+}
+
+.header__period {
+  @apply flex flex-row flex-wrap items-center justify-center text-center font-semibold text-base bg-ahs_black-200 text-ahs_black-700 rounded-md;
+}
+
+.course {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  height: 140px;
+
+  @apply rounded-lg shadow-md;
+}
+
+.course--ics {
+  @apply bg-ahs_blue-300;
+}
+
+.course--dtm {
+  @apply bg-ahs_green-300;
+}
+
+.course--cwc {
+  @apply bg-ahs_orange-300;
+}
+
+.course--cmp {
+  @apply bg-ahs_pink-300;
+}
+
+.course--atw {
+  @apply bg-ahs_red-300;
+}
+
+.course[data-specializationcode="ifd"] .course__header-icon{
+  @apply bg-ahs_orange-500 w-4 h-4 block rounded-full;
+}
+
+.course[data-specializationcode="cad"] .course__header-icon{
+  @apply bg-ahs_pink-500 w-4 h-4 block rounded-full;
+}
+
+.course__header {
+  @apply flex flex-row justify-between w-full p-1 font-bold text-sm text-ahs_black-50;
+}
+
+.course__content {
+  @apply flex-grow flex flex-col items-center justify-center w-full p-1;
+}
+
+.course__footer {
+  @apply flex flex-row justify-between w-full p-1 font-bold text-sm text-ahs_black-50;
+}
+
+.course__name {
+  @apply font-bold text-base text-ahs_black-50 text-center;
+}
+
+.course__sub-name {
+  @apply font-semibold text-sm text-ahs_black-100 text-center;
+}
+
+.course--ics .course__name {
+  @apply text-ahs_blue-10;
+}
+
+.course--ics .course__sub-name {
+  @apply text-ahs_blue-50;
+}
+
+.course--ics .course__header {
+  @apply text-ahs_blue-50;
+}
+
+.course--ics .course__footer {
+  @apply text-ahs_blue-50;
+}
+
+.course--dtm .course__name {
+  @apply text-ahs_green-10;
+}
+
+.course--dtm .course__sub-name {
+  @apply text-ahs_green-50;
+}
+
+.course--dtm .course__header {
+  @apply text-ahs_green-50;
+}
+
+.course--dtm .course__footer {
+  @apply text-ahs_green-50;
+}
+
+.course--cwc .course__name {
+  @apply text-ahs_orange-10;
+}
+
+.course--cwc .course__sub-name {
+  @apply text-ahs_orange-50;
+}
+
+.course--cwc .course__header {
+  @apply text-ahs_orange-50;
+}
+
+.course--cwc .course__footer {
+  @apply text-ahs_orange-50;
+}
+
+.course--cmp .course__name {
+  @apply text-ahs_pink-10;
+}
+
+.course--cmp .course__sub-name {
+  @apply text-ahs_pink-50;
+}
+
+.course--cmp .course__header {
+  @apply text-ahs_pink-50;
+}
+
+.course--cmp .course__footer {
+  @apply text-ahs_pink-50;
+}
+
+.course--atw .course__name {
+  @apply text-ahs_red-10;
+}
+
+.course--atw .course__sub-name {
+  @apply text-ahs_red-50;
+}
+
+.course--atw .course__header {
+  @apply text-ahs_red-50;
+}
+
+.course--atw .course__footer {
+  @apply text-ahs_red-50;
+}
+
+.course__lecturers .lecturer::after {
+  content: '|';
+  @apply ml-0.5 mr-0.5 text-center;
+}
+
+.course__lecturers .lecturer:last-of-type::after {
+  content: '';
+  display: none;
+}
