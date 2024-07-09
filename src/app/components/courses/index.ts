@@ -1,5 +1,7 @@
 import { CourseCard } from "./CourseCard";
+import { CourseDetails } from "./CourseDetails";
 
 export { 
-  CourseCard 
+  CourseCard,
+  CourseDetails, 
 };

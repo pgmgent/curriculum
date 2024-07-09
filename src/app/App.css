@@ -10,7 +10,7 @@
 }
 
 .curriculum__header-container {
-  @apply w-full;
+  @apply w-full p-1 sm:p-2 md:p-4 lg:p-6 xl:p-8;
 }
 
 .curriculum__courses-container {
@@ -43,23 +43,23 @@
 }
 
 .course--ics {
-  @apply bg-ahs_blue-300;
+  @apply bg-ahs_blue-300 selection:bg-ahs_blue-600;
 }
 
 .course--dtm {
-  @apply bg-ahs_green-300;
+  @apply bg-ahs_green-300 selection:bg-ahs_green-600;
 }
 
 .course--cwc {
-  @apply bg-ahs_orange-300;
+  @apply bg-ahs_orange-300 selection:bg-ahs_orange-600;
 }
 
 .course--cmp {
-  @apply bg-ahs_pink-300;
+  @apply bg-ahs_pink-300 selection:bg-ahs_pink-600;
 }
 
 .course--atw {
-  @apply bg-ahs_red-300;
+  @apply bg-ahs_red-300 selection:bg-ahs_red-600;
 }
 
 .course[data-specializationcode="ifd"] .course__header-icon{

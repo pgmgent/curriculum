@@ -1,4 +1,5 @@
 import { Course } from '../../../types/courses';
+import dataLecturers from '../../data/lecturers.json';
 
 export type CardProps<T> = {
   className?: string;
@@ -25,6 +26,15 @@ const getGridColumnEnd = (period: number | string): string => {
   }
 }
 
+const getLecturer = (lecturerCode: string): string => {
+  const lecturer = dataLecturers.find(l => l.code === lecturerCode);
+  if (lecturer) {
+    return lecturer.name;
+  } else {
+    return "Nog niet gekend";
+  }
+}
+
 export const CourseCard = (props: CardProps<Course>): JSX.Element => {
   return (
     <>
@@ -32,8 +42,8 @@ export const CourseCard = (props: CardProps<Course>): JSX.Element => {
         <header className="course__header">
           <span className="course__header-icon"></span>
           <span className="course__lecturers">
-            {props.data.lecturers && props.data.lecturers.map((lecturer, index) => {
-              return <span className="lecturer" key={index}>{lecturer}</span>
+            {props.data.lecturers && props.data.lecturers.map((lecturerCode, index) => {
+              return <span className="lecturer" key={index}><abbr title={getLecturer(lecturerCode)}>{lecturerCode}</abbr></span>
             })}
           </span>
         </header>

@@ -10,7 +10,7 @@ function App() {
         <main>
           <div className="curriculum">
             <header className="curriculum__header-container">
-              <h1 className="text-3xl font-bold underline">Curriculum academiejaar 2024-25</h1>
+              <h1 className="text-center text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-6xl font-extrabold text-ahs_black-300">Curriculum Graduaat Programmeren</h1>
             </header>
             <div className="curriculum__courses-container">
               <div className="header__year" style={{ gridColumnStart: "p1", gridColumnEnd: "span 4", gridRowStart: "year" }}><h1>1ste jaar</h1></div>
