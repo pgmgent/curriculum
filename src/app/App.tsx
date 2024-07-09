@@ -1,9 +1,14 @@
+import { useState } from 'react';
 import './App.css'
 import { CourseCard } from './components/courses';
+import { LearningLinesAsInlineList } from './components/learning-lines';
 
-import dataCurriculum from './data/curriculum_2024_26.json';
+import dataCurriculum202426 from './data/curriculum_2024_26.json';
+import dataLearningLines from './data/learning_lines.json';
 
 function App() {
+  const [dataCurriculum, setDataCurriculum] = useState(dataCurriculum202426);
+  
   return (
     <>
       <div className="App">
@@ -31,6 +36,9 @@ function App() {
                 <CourseCard key={index} data={{ id: 1, name: course.name, subName: course.subName, period: course.period, semester: 1, learningLineCode: course.learningLineCode, credits: course.credits, contactHoursPerWeek: course.contactHoursPerWeek, lecturers: course.lecturers, specializationCode: course.specializationCode }} />
               )}
             </div>
+            <footer className="curriculum__footer-container">
+              <LearningLinesAsInlineList data={dataLearningLines} />
+            </footer>
           </div>
         </main>
       </div>

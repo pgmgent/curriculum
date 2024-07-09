@@ -19,6 +19,10 @@
   @apply grid gap-2 mt-2 w-full;
 }
 
+.curriculum__footer-container {
+  @apply w-full py-2 sm:py-4 md:py-6 lg:py-8 xl:py-10;
+}
+
 .header__year {
   @apply flex flex-row flex-wrap items-center justify-center text-center font-semibold text-base bg-ahs_black-200 text-ahs_black-700 rounded-md;
 }
@@ -63,11 +67,11 @@
 }
 
 .course[data-specializationcode="ifd"] .course__header-icon{
-  @apply bg-ahs_orange-500 w-4 h-4 block rounded-full;
+  @apply bg-ahs_orange-200 w-4 h-4 block rounded-full;
 }
 
 .course[data-specializationcode="cad"] .course__header-icon{
-  @apply bg-ahs_pink-500 w-4 h-4 block rounded-full;
+  @apply bg-ahs_pink-200 w-4 h-4 block rounded-full;
 }
 
 .course__header {
@@ -178,4 +182,42 @@
 .course__lecturers .lecturer:last-of-type::after {
   content: '';
   display: none;
+}
+
+.learninglines {
+  @apply flex flex-row flex-wrap items-center justify-items-start;
+}
+
+.learninglines > li {
+  @apply text-ahs_black-500 flex flex-row items-center justify-items-start mr-4;
+}
+
+.learninglines > li::before {
+  content: '';
+  @apply block w-4 h-4 mr-1 rounded-full bg-ahs_black-500;  
+}
+
+.learninglines > li[data-code="ics"]::before {
+  content: '';
+  @apply bg-ahs_blue-300;  
+}
+
+.learninglines > li[data-code="dtm"]::before {
+  content: '';
+  @apply bg-ahs_green-300;  
+}
+
+.learninglines > li[data-code="cwc"]::before {
+  content: '';
+  @apply bg-ahs_orange-300;  
+}
+
+.learninglines > li[data-code="cmp"]::before {
+  content: '';
+  @apply bg-ahs_pink-300;  
+}
+
+.learninglines > li[data-code="atw"]::before {
+  content: '';
+  @apply bg-ahs_red-300;  
 }
