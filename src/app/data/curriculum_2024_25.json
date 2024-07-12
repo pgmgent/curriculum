@@ -54,11 +54,21 @@
             "lecturers": ["AGB", "NMN"]
         },
         {
-            "name": "Data Management 3",
+            "name": "Data Management",
             "description": "Learn to manage data",
             "credits": 6,
             "contactHoursPerWeek": 8,
             "period": 5,
+            "semester": 3,
+            "learningLineCode": "dtm",
+            "lecturers": ["DDW"]
+        },
+        {
+            "name": "Content Management Systems",
+            "description": "Learn to manage content",
+            "credits": 3,
+            "contactHoursPerWeek": 4,
+            "period": 6,
             "semester": 3,
             "learningLineCode": "dtm",
             "lecturers": ["DDW"]
@@ -227,8 +237,8 @@
             "name": "@Work 3",
             "subName": "Multidisciplinary Web Projects",
             "description": "Work on multidisciplinary web projects",
-            "credits": 9,
-            "contactHoursPerWeek": 14,
+            "credits": 6,
+            "contactHoursPerWeek": 10,
             "period": 6,
             "semester": 3,
             "learningLineCode": "atw",
