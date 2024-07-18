@@ -1,6 +1,6 @@
-import { useState } from 'react';
+import { useCallback, useState } from 'react';
 import './App.css'
-import { CourseCard } from './components/courses';
+import { CourseCard, CourseDetailsModal } from './components/courses';
 import { LearningLinesAsInlineList } from './components/learning-lines';
 
 import dataCurriculum202426 from './data/curriculum_2024_26.json';
@@ -8,10 +8,26 @@ import dataLearningLines from './data/learning_lines.json';
 
 function App() {
   const [dataCurriculum] = useState(dataCurriculum202426);
+  const [isDetailsModalOpen, setCourseDetailsModalOpen] = useState<boolean>(false);
+  const [selectedCourse, setSelectedCourse] = useState(null);
+
+  const handleOpenCourseDetailsModal = useCallback((courseId: string) => {
+    setSelectedCourse(dataCurriculum.courses.find(c => c.id === courseId));
+    setCourseDetailsModalOpen(true);
+  }, []);
+
+  const handleCloseCourseDetailsModal = useCallback(() => {
+    setCourseDetailsModalOpen(false);
+  }, []);
   
   return (
     <>
       <div className="App">
+        <CourseDetailsModal 
+          isOpen={isDetailsModalOpen}
+          onClose={handleCloseCourseDetailsModal}
+          data={selectedCourse}
+        />
         <main>
           <div className="curriculum">
             <header className="curriculum__header-container">
@@ -32,8 +48,8 @@ function App() {
               <div className="header__period" style={{ gridColumnStart: "p6", gridColumnEnd: "span 1", gridRowStart: "per"}}>Periode 6</div>
               <div className="header__period" style={{ gridColumnStart: "p7", gridColumnEnd: "span 1", gridRowStart: "per"}}>Periode 7</div>
               <div className="header__period" style={{ gridColumnStart: "p8", gridColumnEnd: "span 1", gridRowStart: "per"}}>Periode 8</div>
-              {dataCurriculum && dataCurriculum.courses && dataCurriculum.courses.map((course, index) =>
-                <CourseCard key={index} data={{ id: 1, name: course.name, subName: course.subName, period: course.period, semester: 1, learningLineCode: course.learningLineCode, credits: course.credits, contactHoursPerWeek: course.contactHoursPerWeek, lecturers: course.lecturers, specializationCode: course.specializationCode }} />
+              {dataCurriculum && dataCurriculum.courses && dataCurriculum.courses.map((course) =>
+                <CourseCard key={course.id} data={{ id: course.id, name: course.name, subName: course.subName, period: course.period, semester: 1, learningLineCode: course.learningLineCode, credits: course.credits, contactHoursPerWeek: course.contactHoursPerWeek, lecturers: course.lecturers, specializationCode: course.specializationCode }} onCourseDetailsOpen={handleOpenCourseDetailsModal} />
               )}
             </div>
             <footer className="curriculum__footer-container">

@@ -1,7 +1,7 @@
 import { CourseCard } from "./CourseCard";
-import { CourseDetails } from "./CourseDetails";
+import { CourseDetailsModal } from "./CourseDetailsModal";
 
 export { 
   CourseCard,
-  CourseDetails, 
+  CourseDetailsModal, 
 };
