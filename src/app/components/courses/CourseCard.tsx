@@ -1,11 +1,10 @@
-import { useCallback, useState } from 'react';
+import { useCallback } from 'react';
 
 import { Course } from '../../../types/courses';
 import dataLecturers from '../../data/lecturers.json';
 
 export type CardProps<T> = {
   className?: string;
-  children?: React.ReactNode;
   data: T,
   onCourseDetailsOpen: Function;
 };
@@ -37,7 +36,7 @@ const getLecturer = (lecturerCode: string): string => {
   }
 }
 
-export const CourseCard = ({className, children, data, onCourseDetailsOpen}: CardProps<Course>): JSX.Element => {
+export const CourseCard = ({className, data, onCourseDetailsOpen}: CardProps<Course>): JSX.Element => {
   const handleOnClick = useCallback(() => {
     if (onCourseDetailsOpen) {
       onCourseDetailsOpen(data.id);
@@ -46,7 +45,7 @@ export const CourseCard = ({className, children, data, onCourseDetailsOpen}: Car
 
   return (
     <>
-      <div className={`course course--${data.learningLineCode}`} style={{ gridColumnStart: getGridColumnStart(data.period), gridColumnEnd: getGridColumnEnd(data.period), gridRowStart: data.learningLineCode }} data-specializationcode={data.specializationCode} onClick={handleOnClick}>
+      <div className={`course course--${data.learningLineCode}${className ? ` ${className}` : ''}`} style={{ gridColumnStart: getGridColumnStart(data.period), gridColumnEnd: getGridColumnEnd(data.period), gridRowStart: data.learningLineCode }} data-specializationcode={data.specializationCode} onClick={handleOnClick}>
         <header className="course__header">
           <span className="course__header-icon"></span>
           <span className="course__lecturers">

@@ -2,6 +2,7 @@ import { useCallback, useState } from 'react';
 import './App.css'
 import { CourseCard, CourseDetailsModal } from './components/courses';
 import { LearningLinesAsInlineList } from './components/learning-lines';
+import { Course } from '../types/courses'
 
 import dataCurriculum202426 from './data/curriculum_2024_26.json';
 import dataLearningLines from './data/learning_lines.json';
@@ -9,7 +10,7 @@ import dataLearningLines from './data/learning_lines.json';
 function App() {
   const [dataCurriculum] = useState(dataCurriculum202426);
   const [isDetailsModalOpen, setCourseDetailsModalOpen] = useState<boolean>(false);
-  const [selectedCourse, setSelectedCourse] = useState(null);
+  const [selectedCourse, setSelectedCourse] = useState<Course | null | undefined>(null);
 
   const handleOpenCourseDetailsModal = useCallback((courseId: string) => {
     setSelectedCourse(dataCurriculum.courses.find(c => c.id === courseId));

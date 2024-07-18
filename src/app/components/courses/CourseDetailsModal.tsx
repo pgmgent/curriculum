@@ -9,14 +9,12 @@ import dataLearningLines from '../../data/learning_lines.json';
 import lecturers from '../../data/lecturers.json';
 
 export type DetailsModalProps<T> = {
-  className?: string;
-  children?: React.ReactNode;
   isOpen: boolean;
   onClose: () => void;
-  data?: T,
+  data?: T | null | undefined,
 };
 
-export const CourseDetailsModal = ({className, children, isOpen, onClose, data}: DetailsModalProps<Course>): JSX.Element => {
+export const CourseDetailsModal = ({isOpen, onClose, data}: DetailsModalProps<Course>): JSX.Element => {
   return (
     <>
       <Modal
@@ -27,7 +25,7 @@ export const CourseDetailsModal = ({className, children, isOpen, onClose, data}:
         >
         {!!data &&
         <>
-          <p className={`course-details__learningline`} data-code={data.learningLineCode}>{dataLearningLines.find(ll => ll.code === data.learningLineCode).name}</p>
+          <p className={`course-details__learningline`} data-code={data.learningLineCode}>{dataLearningLines.find(ll => ll.code === data.learningLineCode)?.name}</p>
           <h1 className={`course-details__name`}>{data.name}</h1>
           {data.tags && data.tags.length > 0 &&
             <ul className={`course-details__tags`}>

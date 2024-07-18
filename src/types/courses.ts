@@ -1,5 +1,5 @@
 export interface Course {
-  id: number;
+  id: string;
   name: string;
   subName?: string;
   description?: string;
@@ -10,4 +10,5 @@ export interface Course {
   learningLineCode: string;
   lecturers?: string[];
   specializationCode?: string;
+  tags?: Array<string>;
 }
