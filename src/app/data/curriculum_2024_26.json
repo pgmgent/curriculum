@@ -45,7 +45,13 @@
             "period": "5+6",
             "semester": 3,
             "learningLineCode": "ics",
-            "lecturers": ["PDP", "CGR"]
+            "lecturers": ["PDP", "CGR"],
+            "tags": [
+                "ambassadeursschap",
+                "design research",
+                "trends en innovaties",
+                "werkplekleren"
+            ]
         },
         {
             "id": "24_25_dtman1",
@@ -56,7 +62,13 @@
             "period": 1,
             "semester": 1,
             "learningLineCode": "dtm",
-            "lecturers": ["DDW"]
+            "lecturers": ["DDW"],
+            "tags": [
+                "data",
+                "databases",
+                "internet",
+                "web"
+            ]
         },
         {
             "id": "24_25_dtman2",
@@ -67,7 +79,13 @@
             "period": 3,
             "semester": 2,
             "learningLineCode": "dtm",
-            "lecturers": ["AGB", "NMN"]
+            "lecturers": ["AGB", "NMN"],
+            "tags": [
+                "php",
+                "databases",
+                "cms",
+                "craftcms"
+            ]
         },
         {
             "id": "24_25_dtman3",
@@ -78,7 +96,13 @@
             "period": 5,
             "semester": 3,
             "learningLineCode": "dtm",
-            "lecturers": ["DDW"]
+            "lecturers": ["DDW"],
+            "tags": [
+                "php",
+                "oop",
+                "laravel",
+                "eloquent"
+            ]
         },
         {
             "id": "24_25_web1",

@@ -14,6 +14,14 @@ export type DetailsModalProps<T> = {
   data?: T | null | undefined,
 };
 
+/**
+ * Renders a modal component displaying the details of a course.
+ *
+ * @param isOpen - A boolean indicating whether the modal is open or not.
+ * @param onClose - A function to handle the close event of the modal.
+ * @param data - The data object containing the details of the course.
+ * @returns The JSX element representing the course details modal.
+ */
 export const CourseDetailsModal = ({isOpen, onClose, data}: DetailsModalProps<Course>): JSX.Element => {
   return (
     <>

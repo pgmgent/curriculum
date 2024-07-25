@@ -36,6 +36,15 @@ const getLecturer = (lecturerCode: string): string => {
   }
 }
 
+/**
+ * Renders a course card component.
+ *
+ * @param {Object} props - The component props.
+ * @param {string} props.className - The class name for the component.
+ * @param {Course} props.data - The course data.
+ * @param {Function} props.onCourseDetailsOpen - The function to handle opening course details.
+ * @returns {JSX.Element} The rendered course card component.
+ */
 export const CourseCard = ({className, data, onCourseDetailsOpen}: CardProps<Course>): JSX.Element => {
   const handleOnClick = useCallback(() => {
     if (onCourseDetailsOpen) {
