@@ -1,9 +1,10 @@
 {
-    "id": "curriculum_2024_26",
-    "name": "Curriculum 2024-26",
-    "description": "Curriculum for the 2024-26 school years",
+    "id": "curriculum_2024_25",
+    "name": "Curriculum 2024-25",
+    "description": "Curriculum for the 2024-25 school years",
     "courses": [
         {
+            "id": "24_25_itprof",
             "name": "IT Professional",
             "description": "Learn to be a professional IT person",
             "credits": 4,
@@ -11,9 +12,14 @@
             "period": "1+2",
             "semester": 1,
             "learningLineCode": "ics",
-            "lecturers": ["IVC", "CGR", "TBD"]
+            "lecturers": ["IVC", "CGR", "TBD"],
+            "tags": [
+                "persoonlijke ontwikkeling",
+                "professionele communicatie"
+            ]
         },
         {
+            "id": "24_25_itprot",
             "name": "IT Portfolio",
             "description": "Learn to create a portfolio",
             "credits": 5,
@@ -21,9 +27,17 @@
             "period": "3+4",
             "semester": 2,
             "learningLineCode": "ics",
-            "lecturers": ["IVC", "CGR"]
+            "lecturers": ["IVC", "CGR"],
+            "tags": [
+                "persoonlijke ontwikkeling",
+                "professionele communicatie",
+                "bedrijfscommunicatie",
+                "solliciteren",
+                "portfolio"
+            ]
         },
         {
+            "id": "24_25_itexpl",
             "name": "IT Exploration",
             "description": "Explore the IT field",
             "credits": 6,
@@ -31,9 +45,16 @@
             "period": "5+6",
             "semester": 3,
             "learningLineCode": "ics",
-            "lecturers": ["PDP", "CGR"]
+            "lecturers": ["PDP", "CGR"],
+            "tags": [
+                "ambassadeursschap",
+                "design research",
+                "trends en innovaties",
+                "werkplekleren"
+            ]
         },
         {
+            "id": "24_25_dtman1",
             "name": "Data Management 1",
             "description": "Learn to manage data",
             "credits": 3,
@@ -41,9 +62,16 @@
             "period": 1,
             "semester": 1,
             "learningLineCode": "dtm",
-            "lecturers": ["DDW"]
+            "lecturers": ["DDW"],
+            "tags": [
+                "data",
+                "databases",
+                "internet",
+                "web"
+            ]
         },
         {
+            "id": "24_25_dtman2",
             "name": "Data Management 2",
             "description": "Learn to manage data",
             "credits": 3,
@@ -51,9 +79,16 @@
             "period": 3,
             "semester": 2,
             "learningLineCode": "dtm",
-            "lecturers": ["AGB", "NMN"]
+            "lecturers": ["AGB", "NMN"],
+            "tags": [
+                "php",
+                "databases",
+                "cms",
+                "craftcms"
+            ]
         },
         {
+            "id": "24_25_dtman",
             "name": "Data Management",
             "description": "Learn to manage data",
             "credits": 6,
@@ -61,19 +96,33 @@
             "period": 5,
             "semester": 3,
             "learningLineCode": "dtm",
-            "lecturers": ["DDW"]
+            "lecturers": ["DDW"],
+            "tags": [
+                "php",
+                "oop",
+                "laravel",
+                "eloquent"
+            ]
         },
         {
+            "id": "24_25_cms",
             "name": "Content Management Systems",
-            "description": "Learn to manage content",
+            "description": "Learn to manage data",
             "credits": 3,
             "contactHoursPerWeek": 4,
             "period": 6,
             "semester": 3,
             "learningLineCode": "dtm",
-            "lecturers": ["DDW"]
+            "lecturers": ["DDW"],
+            "tags": [
+                "php",
+                "oop",
+                "laravel",
+                "eloquent"
+            ]
         },
         {
+            "id": "24_25_web1",
             "name": "Web 1",
             "subName": "Essentials",
             "description": "Learn the essentials of web development",
@@ -82,9 +131,14 @@
             "period": 1,
             "semester": 1,
             "learningLineCode": "cwc",
-            "lecturers": ["EVR", "MSP"]
+            "lecturers": ["EVR", "MSP"],
+            "tags": [
+                "html",
+                "css"
+            ]
         },
         {
+            "id": "24_25_web2",
             "name": "Web 2",
             "subName": "Intermediate",
             "description": "Learn intermediate web development",
@@ -96,6 +150,7 @@
             "lecturers": ["EVR", "MVP"]
         },
         {
+            "id": "24_25_web3",
             "name": "Web 3",
             "subName": "Advanced",
             "description": "Learn advanced web development",
@@ -107,6 +162,7 @@
             "lecturers": ["AGB", "MVP"]
         },
         {
+            "id": "24_25_web4",
             "name": "Web 4",
             "subName": "Web Animations & Interactions",
             "description": "Learn to create web animations and interactions",
@@ -119,6 +175,7 @@
             "specializationCode": "ifd"
         },
         {
+            "id": "25_26_web5",
             "name": "Web 5",
             "subName": "Web Frameworks",
             "description": "Learn to create web applications with frameworks",
@@ -131,6 +188,7 @@
             "specializationCode": "ifd"
         },
         {
+            "id": "25_26_web6",
             "name": "Web 6",
             "subName": "Creative Coding",
             "description": "Learn to create creative web applications",
@@ -143,6 +201,7 @@
             "specializationCode": "ifd"
         },
         {
+            "id": "24_25_prgm1",
             "name": "Programming 1",
             "subName": "Essentials",
             "description": "Learn the essentials of web development",
@@ -151,9 +210,16 @@
             "period": 1,
             "semester": 1,
             "learningLineCode": "cmp",
-            "lecturers": ["MVP", "NMN"]
+            "lecturers": ["MVP", "NMN"],
+            "tags": [
+                "javascript",
+                "nodejs",
+                "html",
+                "css"
+            ]
         },
         {
+            "id": "24_25_prgm2",
             "name": "Programming 2",
             "subName": "Intermediate",
             "description": "Learn intermediate web development",
@@ -162,9 +228,17 @@
             "period": 2,
             "semester": 1,
             "learningLineCode": "cmp",
-            "lecturers": ["AGB", "NMN"]
+            "lecturers": ["AGB", "NMN"],
+            "tags": [
+                "javascript",
+                "nodejs",
+                "express",
+                "html",
+                "css"
+            ]
         },
         {
+            "id": "24_25_prgm3",
             "name": "Programming 3",
             "subName": "Advanced",
             "description": "Learn advanced web development",
@@ -173,9 +247,20 @@
             "period": 3,
             "semester": 2,
             "learningLineCode": "cmp",
-            "lecturers": ["FRG", "EVR"]
+            "lecturers": ["FRG", "EVR"],
+            "tags": [
+                "javascript",
+                "nodejs",
+                "typescript",
+                "sqlite",
+                "orm",
+                "express",
+                "html",
+                "css"
+            ]
         },
         {
+            "id": "24_25_prgm4",
             "name": "Programming 4",
             "subName": "JAMstack",
             "description": "Learn to create JAMstack web applications",
@@ -188,6 +273,7 @@
             "specializationCode": "cad"
         },
         {
+            "id": "25_26_prgm5",
             "name": "Programming 5",
             "subName": "Full-stack",
             "description": "Learn to create full-stack web applications",
@@ -200,6 +286,7 @@
             "specializationCode": "cad"
         },
         {
+            "id": "25_26_prgm6",
             "name": "Programming 6",
             "subName": "Mobile",
             "description": "Learn to create mobile applications",
@@ -212,6 +299,7 @@
             "specializationCode": "cad"
         },
         {
+            "id": "24_25_atw1",
             "name": "@Work 1",
             "subName": "Static Web Projects",
             "description": "Work on static web projects",
@@ -223,6 +311,7 @@
             "lecturers": ["MSP"]
         },
         {
+            "id": "24_25_atw2",
             "name": "@Work 2",
             "subName": "Dynamic Web Projects",
             "description": "Work on dynamic web projects",
@@ -234,6 +323,7 @@
             "lecturers": ["FRG", "NMN"]
         },
         {
+            "id": "25_26_atw3",
             "name": "@Work 3",
             "subName": "Multidisciplinary Web Projects",
             "description": "Work on multidisciplinary web projects",
@@ -245,6 +335,7 @@
             "lecturers": ["DDW", "JLB"]
         },
         {
+            "id": "25_26_atw4",
             "name": "@Work 4",
             "subName": "Graduation Project",
             "description": "Work on a graduation project",
@@ -253,9 +344,16 @@
             "period": 7,
             "semester": 4,
             "learningLineCode": "atw",
-            "lecturers": ["IDC", "ISB", "IVC", "CGR"]
+            "lecturers": ["IDC", "ISB", "IVC", "CGR"],
+            "tags": [
+                "werkplekleren",
+                "eindwerk",
+                "afstudeerproject",
+                "leerbedrijf"
+            ]
         },
         {
+            "id": "25_26_atw5",
             "name": "@Work 5",
             "subName": "Internship",
             "description": "Internship at a company",
@@ -264,7 +362,12 @@
             "period": 8,
             "semester": 4,
             "learningLineCode": "atw",
-            "lecturers": ["MVP", "AGB", "JLB", "TBD"]
+            "lecturers": ["MVP", "AGB", "JLB", "TBD"],
+            "tags": [
+                "werkplekleren",
+                "stage",
+                "leerbedrijf"
+            ]
         }
     ]
 }
