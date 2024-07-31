@@ -14,9 +14,9 @@
 }
 
 .curriculum__courses-container {
-  grid-template-columns: [p1] 1fr [p2] 1fr [p3] 1fr [p4] 1fr [p5] 1fr [p6] 1fr [p7] 1fr [p8] 1fr;
+  grid-template-columns: [p1] minmax(140px, 1fr) [p2] minmax(140px, 1fr) [p3] minmax(140px, 1fr) [p4] minmax(140px, 1fr) [p5] minmax(140px, 1fr) [p6] minmax(140px, 1fr) [p7] minmax(140px, 1fr) [p8] minmax(140px, 1fr);
   grid-template-rows: [year] auto [sem] auto [per] auto [ics] auto [dtm] auto [cwc] auto [cmp] auto [atw] auto;
-  @apply grid gap-2 mt-2 w-full;
+  @apply grid gap-2 py-4 w-full overflow-x-scroll overflow-y-hidden;
 }
 
 .curriculum__footer-container {
@@ -185,7 +185,7 @@
 }
 
 .learninglines {
-  @apply flex flex-row flex-wrap items-center justify-items-start;
+  @apply flex flex-col md:flex-row flex-wrap items-start md:items-center justify-items-start mt-4;
 }
 
 .learninglines>li {

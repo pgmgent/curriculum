@@ -50,7 +50,7 @@ function App() {
   return (
     <>
       <div className="App">
-        <div className={`flex flex-row items-center justify-end p-2`}>
+        <div className={`flex flex-row flex-wrap items-center justify-end p-2`}>
           <select onChange={(ev) => handleChangeCurriculum(ev)} className={`bg-gray-50 border border-ahs_blue-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-ahs_blue-500 dark:focus:border-ahs_blue-500 mx-2`}>
             {dataCurricula.map((curriculum, index) => <option key={index} value={curriculum.label}>{curriculum.label}</option>)}
           </select>
