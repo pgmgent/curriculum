@@ -1,0 +1,22 @@
+[
+    {
+        "code": "ics",
+        "name": "IT Communication Skills"
+    },
+    {
+        "code": "dtm",
+        "name": "Data Management"
+    },
+    {
+        "code": "cwc",
+        "name": "Creative Web Coding"
+    },
+    {
+        "code": "cmp",
+        "name": "Computer Programming"
+    },
+    {
+        "code": "atw",
+        "name": "Workplace Learning"
+    }
+]
