@@ -10,6 +10,7 @@ import dataCurriculum202426 from './data/curriculum_2024_26.json';
 import dataLearningLines from './data/learning_lines.json';
 import dataSpecializations from './data/specializations.json';
 
+
 function App() {
   const [dataCurriculum, setDataCurriculum] = useState(dataCurriculum202426);
   const [dataFilteredCurriculum, setDataFilteredCurriculum] = useState(dataCurriculum);

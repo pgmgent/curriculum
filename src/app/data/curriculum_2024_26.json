@@ -62,7 +62,7 @@
             "period": 1,
             "semester": 1,
             "learningLineCode": "dtm",
-            "lecturers": ["DDW"],
+            "lecturers": ["AGB"],
             "tags": [
                 "data",
                 "databases",
@@ -114,7 +114,7 @@
             "period": 1,
             "semester": 1,
             "learningLineCode": "cwc",
-            "lecturers": ["EVR", "MSP"],
+            "lecturers": ["EVR", "SVP"],
             "tags": [
                 "html",
                 "css"
@@ -291,7 +291,7 @@
             "period": 2,
             "semester": 1,
             "learningLineCode": "atw",
-            "lecturers": ["MSP"]
+            "lecturers": ["SVP"]
         },
         {
             "id": "24_25_atw2",
