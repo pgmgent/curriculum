@@ -142,7 +142,7 @@
             "period": 3,
             "semester": 2,
             "learningLineCode": "cwc",
-            "lecturers": ["AGB", "MVP"]
+            "lecturers": ["AGB"]
         },
         {
             "id": "24_25_web4",
@@ -287,11 +287,11 @@
             "subName": "Static Web Projects",
             "description": "Work on static web projects",
             "credits": 6,
-            "contactHoursPerWeek": 10,
+            "contactHoursPerWeek": 8,
             "period": 2,
             "semester": 1,
             "learningLineCode": "atw",
-            "lecturers": ["SVP"]
+            "lecturers": ["SVP", "DPS"]
         },
         {
             "id": "24_25_atw2",
@@ -299,7 +299,7 @@
             "subName": "Dynamic Web Projects",
             "description": "Work on dynamic web projects",
             "credits": 6,
-            "contactHoursPerWeek": 10,
+            "contactHoursPerWeek": 8,
             "period": 4,
             "semester": 2,
             "learningLineCode": "atw",
