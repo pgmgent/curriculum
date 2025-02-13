@@ -46,7 +46,7 @@ function App() {
     const filteredCurriculum = { ...dataCurriculum};  
 
     if (selectedSpecialization !== "all") {
-      filteredCurriculum.courses = filteredCurriculum.courses.filter((course) => course.hasOwnProperty('specializationCode') && course.specializationCode === selectedSpecialization || !course.hasOwnProperty('specializationCode'));
+      filteredCurriculum.courses = filteredCurriculum.courses.filter((course) => course.hasOwnProperty('specializationCode') && course["specializationCode"] === selectedSpecialization || !course.hasOwnProperty('specializationCode'));
     }
 
     setDataFilteredCurriculum(filteredCurriculum);
