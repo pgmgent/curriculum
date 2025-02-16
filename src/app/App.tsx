@@ -31,9 +31,9 @@ function App() {
 
   const handleChangeCurriculum = useCallback((ev: any) => {
     switch (ev.target.value) {
-      case "Curriculum 2025-27": setDataCurriculum(dataCurriculum202527); break;
+      case "Curriculum 2025-27": default: setDataCurriculum(dataCurriculum202527); break;
       case "Curriculum 2025-26": setDataCurriculum(dataCurriculum202526); break;
-      case "Curriculum 2024-26": default: setDataCurriculum(dataCurriculum202426); break;
+      case "Curriculum 2024-26": setDataCurriculum(dataCurriculum202426); break;
       case "Curriculum 2024-25": setDataCurriculum(dataCurriculum202425); break;
     }
   }, []);
