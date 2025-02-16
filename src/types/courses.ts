@@ -12,3 +12,7 @@ export interface Course {
   specializationCode?: string;
   tags?: Array<string>;
 }
+
+export type Curriculum = {
+  courses: Course[];
+}
