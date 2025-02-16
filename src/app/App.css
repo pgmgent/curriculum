@@ -361,3 +361,11 @@ dialog,
 .course-details__lecturers-title {
   @apply font-bold text-2xl;
 }
+
+.course-details__description {
+  @apply font-normal text-lg mt-4;
+}
+
+.course-details__description-title {
+  @apply font-bold text-2xl;
+}

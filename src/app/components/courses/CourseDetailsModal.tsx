@@ -32,7 +32,7 @@ export const CourseDetailsModal = ({isOpen, onClose, data}: DetailsModalProps<Co
         className={`${data ? `ll--${data.learningLineCode}` : ''}`}
         >
         {!!data &&
-        <>
+        <article className={`course-details`}>
           <p className={`course-details__learningline`} data-code={data.learningLineCode}>{dataLearningLines.find(ll => ll.code === data.learningLineCode)?.name}</p>
           <h1 className={`course-details__name`}>{data.name}</h1>
           {data.tags && data.tags.length > 0 &&
@@ -59,7 +59,11 @@ export const CourseDetailsModal = ({isOpen, onClose, data}: DetailsModalProps<Co
               })}
             </ul>
           </section>
-        </>
+          <section className={`course-details__description`}>
+            <h2 className={`course-details__description-title`}>Omschrijving</h2>
+            <p>{data.description}</p>
+          </section>
+        </article>
         }
       </Modal>
     </>
