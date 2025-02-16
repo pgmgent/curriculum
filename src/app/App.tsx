@@ -2,7 +2,7 @@ import { useCallback, useEffect, useState } from 'react';
 import './App.css'
 import { CourseCard, CourseDetailsModal } from './components/courses';
 import { LearningLinesAsInlineList } from './components/learning-lines';
-import { Course } from '../types/courses'
+import { Course, Curriculum } from '../types/courses'
 
 import dataCurricula from './data/curricula.json';
 import dataCurriculum202425 from './data/curriculum_2024_25.json';
@@ -14,8 +14,8 @@ import dataSpecializations from './data/specializations.json';
 
 
 function App() {
-  const [dataCurriculum, setDataCurriculum] = useState(dataCurriculum202527);
-  const [dataFilteredCurriculum, setDataFilteredCurriculum] = useState(dataCurriculum);
+  const [dataCurriculum, setDataCurriculum] = useState<Curriculum>(dataCurriculum202527);
+  const [dataFilteredCurriculum, setDataFilteredCurriculum] = useState<Curriculum>(dataCurriculum);
   const [selectedSpecialization, setSelectedSpecialization] = useState("all");
   const [isDetailsModalOpen, setCourseDetailsModalOpen] = useState<boolean>(false);
   const [selectedCourse, setSelectedCourse] = useState<Course | null | undefined>(null);
