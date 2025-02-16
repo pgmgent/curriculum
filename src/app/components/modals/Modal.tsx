@@ -33,8 +33,14 @@ const Modal = ({ isOpen, hasCloseBtn, onClose, children, className }: ModalProps
     }
   };
 
+  const handleOnClick = (event: React.MouseEvent<HTMLDialogElement>) => {
+    if (event.target == modalRef.current) {
+      handleCloseModal();
+    }
+  };
+
   return (
-    <dialog className={`modal${className ? ` ${className}` : ''}`} ref={modalRef} onKeyDown={handleKeyDown}>
+    <dialog className={`modal${className ? ` ${className}` : ''}`} ref={modalRef} onKeyDown={handleKeyDown} onClick={handleOnClick}>
       {hasCloseBtn && (
         <button className="modal-close-btn" onClick={handleCloseModal}>
           <FaRegWindowClose />
