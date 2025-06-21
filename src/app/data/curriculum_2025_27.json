@@ -5,14 +5,14 @@
     "courses": [
         {
             "id": "25_26_pesk",
-            "name": "People Skills",
-            "description": "In People Skills leer je studie- en planningsvaardigheden zoals tijdmanagement, zelfsturing en reflectie. Je ontwikkelt communicatieve vaardigheden voor werk en sociale situaties, van schrijven en gesprekken voeren tot samenwerken in teams. Je stelt een persoonlijk actie- en ontwikkelplan op om je doelen te bereiken, met aandacht voor ethiek en professionele groei.",
+            "name": "Personal Skills",
+            "description": "In Personal Skills leer je studie- en planningsvaardigheden zoals tijdmanagement, zelfsturing en reflectie. Je ontwikkelt communicatieve vaardigheden voor werk en sociale situaties, van schrijven en gesprekken voeren tot samenwerken in teams. Je stelt een persoonlijk actie- en ontwikkelplan op om je doelen te bereiken, met aandacht voor ethiek en professionele groei.",
             "credits": 4,
             "contactHoursPerWeek": 4,
             "period": "1+2",
             "semester": 1,
             "learningLineCode": "ics",
-            "lecturers": ["IVC", "CGR", "TBD"],
+            "lecturers": ["IVC", "SSG"],
             "tags": [
                 "persoonlijke ontwikkeling",
                 "professionele communicatie"
@@ -27,7 +27,7 @@
             "period": "3+4",
             "semester": 2,
             "learningLineCode": "ics",
-            "lecturers": ["IVC", "CGR"],
+            "lecturers": ["IVC", "SSG"],
             "tags": [
                 "persoonlijke ontwikkeling",
                 "professionele communicatie",
@@ -45,7 +45,7 @@
             "period": "5+6",
             "semester": 3,
             "learningLineCode": "ics",
-            "lecturers": ["PDP", "CGR"],
+            "lecturers": ["TBD"],
             "tags": [
                 "ambassadeursschap",
                 "design research",
@@ -81,7 +81,7 @@
             "period": 3,
             "semester": 2,
             "learningLineCode": "dtm",
-            "lecturers": ["AGB", "NMN"],
+            "lecturers": ["FRG"],
             "tags": [
                 "php",
                 "databases",
@@ -117,7 +117,7 @@
             "period": 1,
             "semester": 1,
             "learningLineCode": "cwc",
-            "lecturers": ["EVR", "SVP"],
+            "lecturers": ["DPS", "KDS", "TBD"],
             "tags": [
                 "html",
                 "css"
@@ -133,7 +133,7 @@
             "period": 2,
             "semester": 1,
             "learningLineCode": "cwc",
-            "lecturers": ["EVR", "MVP"]
+            "lecturers": ["MVP", "DPS", "TBD"]
         },
         {
             "id": "25_26_web3",
@@ -145,7 +145,7 @@
             "period": 3,
             "semester": 2,
             "learningLineCode": "cwc",
-            "lecturers": ["AGB"]
+            "lecturers": ["AGB", "SVP"]
         },
         {
             "id": "25_26_web4",
@@ -187,7 +187,7 @@
             "period": 2,
             "semester": 1,
             "learningLineCode": "cmp",
-            "lecturers": ["AGB", "NMN"],
+            "lecturers": ["AGB", "TBD"],
             "tags": [
                 "javascript",
                 "nodejs",
@@ -206,7 +206,7 @@
             "period": 3,
             "semester": 2,
             "learningLineCode": "cmp",
-            "lecturers": ["FRG", "EVR"],
+            "lecturers": ["NMD", "KDS"],
             "tags": [
                 "javascript",
                 "nodejs",
@@ -228,7 +228,7 @@
             "period": 4,
             "semester": 2,
             "learningLineCode": "cmp",
-            "lecturers": ["EVR"]
+            "lecturers": ["KDS", "NMN"]
         },
         {
             "id": "26_27_prgm5",
@@ -240,7 +240,7 @@
             "period": 5,
             "semester": 3,
             "learningLineCode": "cmp",
-            "lecturers": ["JLB"]
+            "lecturers": ["KDS"]
         },
         {
             "id": "26_27_prgm6",
@@ -264,7 +264,7 @@
             "period": 2,
             "semester": 1,
             "learningLineCode": "atw",
-            "lecturers": ["SVP", "DPS"]
+            "lecturers": ["DPS", "KDS"]
         },
         {
             "id": "25_26_atw2",
@@ -276,7 +276,7 @@
             "period": 4,
             "semester": 2,
             "learningLineCode": "atw",
-            "lecturers": ["FRG", "NMN"]
+            "lecturers": ["FRG", "SVP"]
         },
         {
             "id": "26_27_atw3",
@@ -288,7 +288,7 @@
             "period": 6,
             "semester": 3,
             "learningLineCode": "atw",
-            "lecturers": ["DDW", "JLB"]
+            "lecturers": ["DDW", "KDS"]
         },
         {
             "id": "26_27_atw4",
@@ -300,7 +300,7 @@
             "period": 7,
             "semester": 4,
             "learningLineCode": "atw",
-            "lecturers": ["IDC", "ISB", "IVC", "CGR"],
+            "lecturers": ["MVP", "FRG", "NMN", "AGB", "KDS"],
             "tags": [
                 "werkplekleren",
                 "eindwerk",
@@ -318,7 +318,7 @@
             "period": 8,
             "semester": 4,
             "learningLineCode": "atw",
-            "lecturers": ["MVP", "AGB", "JLB", "TBD"],
+            "lecturers": ["IDC", "ISB", "IVC", "SSG", "TBD"],
             "tags": [
                 "werkplekleren",
                 "stage",
