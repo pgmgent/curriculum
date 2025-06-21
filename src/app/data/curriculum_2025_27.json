@@ -206,7 +206,7 @@
             "period": 3,
             "semester": 2,
             "learningLineCode": "cmp",
-            "lecturers": ["NMD", "KDS"],
+            "lecturers": ["NMN", "KDS"],
             "tags": [
                 "javascript",
                 "nodejs",
