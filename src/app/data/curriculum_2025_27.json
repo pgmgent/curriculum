@@ -15,7 +15,8 @@
             "lecturers": ["IVC", "SSG"],
             "tags": [
                 "persoonlijke ontwikkeling",
-                "professionele communicatie"
+                "professionele communicatie",
+                "people skills"
             ]
         },
         {
@@ -33,7 +34,8 @@
                 "professionele communicatie",
                 "bedrijfscommunicatie",
                 "solliciteren",
-                "portfolio"
+                "portfolio",
+                "professional skills"
             ]
         },
         {
@@ -50,7 +52,8 @@
                 "ambassadeursschap",
                 "design research",
                 "trends en innovaties",
-                "werkplekleren"
+                "werkplekleren",
+                "community building"
             ]
         },
         {
@@ -68,7 +71,9 @@
                 "data",
                 "databases",
                 "internet",
-                "web"
+                "web",
+                "csv",
+                "json"
             ]
         },
         {
@@ -86,7 +91,9 @@
                 "php",
                 "databases",
                 "cms",
-                "craftcms"
+                "craftcms",
+                "mysql",
+                "postgresql"
             ]
         },
         {
@@ -104,7 +111,9 @@
                 "php",
                 "oop",
                 "laravel",
-                "eloquent"
+                "eloquent",
+                "filament",
+                "laravel mix"
             ]
         },
         {
@@ -118,10 +127,7 @@
             "semester": 1,
             "learningLineCode": "cwc",
             "lecturers": ["DPS", "KDS", "TBD"],
-            "tags": [
-                "html",
-                "css"
-            ]
+            "tags": ["html-fundamentals", "css-basics", "web-browsers", "responsive-design", "web-standards", "semantic-html", "mobile-first", "ai-assistant"]
         },
         {
             "id": "25_26_web2",
@@ -133,7 +139,8 @@
             "period": 2,
             "semester": 1,
             "learningLineCode": "cwc",
-            "lecturers": ["MVP", "DPS", "TBD"]
+            "lecturers": ["MVP", "DPS", "TBD"],
+            "tags": ["intermediate-css", "responsive-design", "css-grid", "web-media", "seo-optimization", "figma", "semantic-html", "ai-assistant"]
         },
         {
             "id": "25_26_web3",
@@ -145,7 +152,8 @@
             "period": 3,
             "semester": 2,
             "learningLineCode": "cwc",
-            "lecturers": ["AGB", "SVP"]
+            "lecturers": ["AGB", "SVP"],
+            "tags": ["advanced-css", "web-accessibility", "wcag", "web-components", "progressive-web-apps", "design-systems", "user-testing", "ai-assistant"]
         },
         {
             "id": "25_26_web4",
@@ -157,7 +165,8 @@
             "period": 4,
             "semester": 2,
             "learningLineCode": "cwc",
-            "lecturers": ["AGB"]
+            "lecturers": ["AGB"],
+            "tags": ["web-animations", "3d-graphics", "three.js", "gsap", "lottie", "webgl", "vr-ar", "ai-content-generation"]
         },
         {
             "id": "25_26_web5",
@@ -170,7 +179,8 @@
             "semester": 3,
             "learningLineCode": "cwc",
             "lecturers": ["MVP"],
-            "specializationCode": "ifd"
+            "specializationCode": "ifd",
+            "tags": ["react", "frontend-framework", "hooks", "state-management", "routing", "testing", "animations", "ai-assistant"]
         },
         {
             "id": "25_26_web6",
@@ -183,7 +193,8 @@
             "semester": 3,
             "learningLineCode": "cwc",
             "lecturers": ["NMN"],
-            "specializationCode": "ifd"
+            "specializationCode": "ifd",
+            "tags": ["creative-web-development", "react", "webgl", "xr-interfaces", "web-games", "cloud-services", "ci-cd", "experimental-ui"]
         },
         {
             "id": "25_26_prgm1",
@@ -196,12 +207,7 @@
             "semester": 1,
             "learningLineCode": "cmp",
             "lecturers": ["MVP", "NMN"],
-            "tags": [
-                "javascript",
-                "nodejs",
-                "html",
-                "css"
-            ]
+            "tags": ["javascript-fundamentals", "node.js", "dom-manipulation", "git-version-control", "debugging", "control-structures", "functions", "ai-assistant"]
         },
         {
             "id": "25_26_prgm2",
@@ -214,13 +220,7 @@
             "semester": 1,
             "learningLineCode": "cmp",
             "lecturers": ["AGB", "TBD"],
-            "tags": [
-                "javascript",
-                "nodejs",
-                "express",
-                "html",
-                "css"
-            ]
+            "tags": ["javascript", "node.js", "async-programming", "mvc-architecture", "express.js", "rest-api", "testing", "ai-assistant"]
         },
         {
             "id": "25_26_prgm3",
@@ -233,16 +233,7 @@
             "semester": 2,
             "learningLineCode": "cmp",
             "lecturers": ["NMN", "KDS"],
-            "tags": [
-                "javascript",
-                "nodejs",
-                "typescript",
-                "sqlite",
-                "orm",
-                "express",
-                "html",
-                "css"
-            ]
+            "tags": ["jamstack", "react", "headless-cms", "strapi", "hooks", "state-management", "ci-cd", "ai-assistant"]
         },
         {
             "id": "25_26_prgm4",
@@ -254,7 +245,8 @@
             "period": 4,
             "semester": 2,
             "learningLineCode": "cmp",
-            "lecturers": ["KDS", "NMN"]
+            "lecturers": ["KDS", "NMN"],
+            "tags": ["backend-development", "typescript", "express.js", "rest-api", "mvc-architecture", "orm", "database-modeling", "ai-assistant"]
         },
         {
             "id": "26_27_prgm5",
@@ -266,7 +258,8 @@
             "period": 5,
             "semester": 3,
             "learningLineCode": "cmp",
-            "lecturers": ["KDS"]
+            "lecturers": ["KDS"],
+            "tags": ["full-stack-development", "typescript", "next.js", "remix", "headless-cms", "api-development", "cloud-deployment", "ai-integration", "testing"]
         },
         {
             "id": "26_27_prgm6",
@@ -278,7 +271,8 @@
             "period": 6,
             "semester": 3,
             "learningLineCode": "cmp",
-            "lecturers": ["MVP"]
+            "lecturers": ["MVP"],
+            "tags": ["mobile-development", "react-native", "expo", "supabase", "hybrid-frameworks", "cloud-services", "ci-cd-mobile", "native-plugins", "typescript", "ai-assistant"]
         },
         {
             "id": "25_26_atw1",
@@ -290,7 +284,8 @@
             "period": 2,
             "semester": 1,
             "learningLineCode": "atw",
-            "lecturers": ["DPS", "KDS"]
+            "lecturers": ["DPS", "KDS"],
+            "tags": ["client-side-development", "dynamische-webapplicaties", "informatiearchitectuur", "ui-design", "industrie-opdrachten", "frontend-development", "design-implementatie", "praktijkervaring"]
         },
         {
             "id": "25_26_atw2",
@@ -302,7 +297,8 @@
             "period": 4,
             "semester": 2,
             "learningLineCode": "atw",
-            "lecturers": ["FRG", "SVP"]
+            "lecturers": ["FRG", "SVP"],
+            "tags": ["teamwork", "open-source", "agile-methodology", "jamstack", "git-workflow", "ci-cd", "projectbeheer", "professional-development"]
         },
         {
             "id": "26_27_atw3",
@@ -314,7 +310,8 @@
             "period": 6,
             "semester": 3,
             "learningLineCode": "atw",
-            "lecturers": ["DDW", "KDS"]
+            "lecturers": ["DDW", "KDS"],
+            "tags": ["multidisciplinair-team", "designproces", "full-stack-development", "cms", "next.js", "remix", "laravel", "agile-projectbeheer", "externe-klant"]
         },
         {
             "id": "26_27_atw4",
@@ -327,12 +324,7 @@
             "semester": 4,
             "learningLineCode": "atw",
             "lecturers": ["MVP", "FRG", "NMN", "AGB", "KDS"],
-            "tags": [
-                "werkplekleren",
-                "eindwerk",
-                "afstudeerproject",
-                "leerbedrijf"
-            ]
+            "tags": ["afstudeerproject", "eindwerk", "human-centered-design", "externe-klant", "productiedossier", "coaching", "werkveld-voorbereiding", "bedrijfscultuur"]
         },
         {
             "id": "26_27_atw5",
@@ -345,11 +337,7 @@
             "semester": 4,
             "learningLineCode": "atw",
             "lecturers": ["IDC", "ISB", "IVC", "SSG", "TBD"],
-            "tags": [
-                "werkplekleren",
-                "stage",
-                "leerbedrijf"
-            ]
+            "tags": ["werkplekleren", "leerbedrijf", "software-development", "agile", "mentoring", "praktijkervaring", "professional-skills", "junior-developer"]
         }
     ]
 }
