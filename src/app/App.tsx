@@ -77,7 +77,7 @@ function App() {
           <meta property="og:title" content="Curriculum | Graduaat Programmeren | Arteveldehogeschool" />
           <meta property="og:type" content="website" />
           <meta property="og:url" content="https://www.pgm.gent/curriculum/" />
-          <meta property="og:image" content="https://www.pgm.gent/curriculum/images/pgm.jpg" />
+          <meta property="og:image" content="https://www.pgm.gent/curriculum/pgm.jpg" />
         </Helmet>
         <div className={`flex flex-row flex-wrap items-center justify-end p-2`}>
           <select onChange={(ev) => handleChangeCurriculum(ev)} className={`bg-gray-50 border border-ahs_blue-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-ahs_blue-500 dark:focus:border-ahs_blue-500 mx-2`}>
