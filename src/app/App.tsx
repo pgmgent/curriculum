@@ -1,4 +1,6 @@
 import { useCallback, useEffect, useState } from 'react';
+import {Helmet} from 'react-helmet';
+
 import './App.css'
 import { CourseCard, CourseDetailsModal } from './components/courses';
 import { LearningLinesAsInlineList } from './components/learning-lines';
@@ -19,6 +21,19 @@ function App() {
   const [selectedSpecialization, setSelectedSpecialization] = useState("all");
   const [isDetailsModalOpen, setCourseDetailsModalOpen] = useState<boolean>(false);
   const [selectedCourse, setSelectedCourse] = useState<Course | null | undefined>(null);
+  const [keywords, setKeywords] = useState<string[]>([]); 
+
+  useEffect(() => {
+    const tempKeywords = new Set<string>();
+    dataCurriculum202527.courses.forEach((course) => {
+      if (course.tags && course.tags.length > 0) {
+        course.tags.forEach((tag) => {
+          tempKeywords.add(tag);
+        });
+      }
+    });
+    setKeywords(Array.from(tempKeywords));
+  }, [dataCurriculum202527]);
 
   const handleOpenCourseDetailsModal = useCallback((courseId: string) => {
     setSelectedCourse(dataCurriculum.courses.find(c => c.id === courseId));
@@ -55,6 +70,15 @@ function App() {
   return (
     <>
       <div className="App">
+        <Helmet>
+          <title>Curriculum | Graduaat Programmeren | Arteveldehogeschool</title>
+          <meta name="description" content="Ontdek het curriculum voor de opleiding Graduaat Programmeren aan Arteveldehogeschool. Ben jij een doener met talent in programmeren en een passie voor digitale technologie? In het graduaat Programmeren leer je hoe je apps, websites en desktopapplicaties bedenkt, ontwikkelt en vormgeeft. Je integreert databanken, cloud en AI-services en krijgt inzicht in hoe digital agencies, softwarebedrijven en IT-afdelingen van bedrijven werken." />
+          <meta name="keywords" content={keywords.join(", ")} />
+          <meta property="og:title" content="Curriculum | Graduaat Programmeren | Arteveldehogeschool" />
+          <meta property="og:type" content="website" />
+          <meta property="og:url" content="https://www.pgm.gent/curriculum/" />
+          <meta property="og:image" content="https://www.pgm.gent/curriculum/images/pgm.jpg" />
+        </Helmet>
         <div className={`flex flex-row flex-wrap items-center justify-end p-2`}>
           <select onChange={(ev) => handleChangeCurriculum(ev)} className={`bg-gray-50 border border-ahs_blue-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-ahs_blue-500 dark:focus:border-ahs_blue-500 mx-2`}>
             {dataCurricula.map((curriculum, index) => <option key={index} value={curriculum.label}>{curriculum.label}</option>)}

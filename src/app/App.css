@@ -369,3 +369,11 @@ dialog,
 .course-details__description-title {
   @apply font-bold text-2xl;
 }
+
+.course-details__description-content p {
+  @apply mb-3;
+}
+
+.course-details__description-content ul {
+  @apply mb-3 list-disc list-inside;
+}

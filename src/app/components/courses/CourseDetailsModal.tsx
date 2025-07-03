@@ -61,7 +61,7 @@ export const CourseDetailsModal = ({isOpen, onClose, data}: DetailsModalProps<Co
           </section>
           <section className={`course-details__description`}>
             <h2 className={`course-details__description-title`}>Omschrijving</h2>
-            <p>{data.description}</p>
+            <div className={`course-details__description-content`} dangerouslySetInnerHTML={{__html: data.description}}></div>
           </section>
         </article>
         }
