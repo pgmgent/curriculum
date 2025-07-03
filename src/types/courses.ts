@@ -2,7 +2,7 @@ export interface Course {
   id: string;
   name: string;
   subName?: string;
-  description?: string | undefined | null;
+  description?: string | undefined | null | TrustedHTML;
   period: number | string;
   semester: number;
   credits: number;  
