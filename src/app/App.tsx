@@ -75,9 +75,16 @@ function App() {
           <meta name="description" content="Ontdek het curriculum voor de opleiding Graduaat Programmeren aan Arteveldehogeschool. Ben jij een doener met talent in programmeren en een passie voor digitale technologie? In het graduaat Programmeren leer je hoe je apps, websites en desktopapplicaties bedenkt, ontwikkelt en vormgeeft. Je integreert databanken, cloud en AI-services en krijgt inzicht in hoe digital agencies, softwarebedrijven en IT-afdelingen van bedrijven werken." />
           <meta name="keywords" content={keywords.join(", ")} />
           <meta property="og:title" content="Curriculum | Graduaat Programmeren | Arteveldehogeschool" />
+          <meta property="og:description" content="Ontdek het curriculum voor de opleiding Graduaat Programmeren aan Arteveldehogeschool. Ben jij een doener met talent in programmeren en een passie voor digitale technologie? In het graduaat Programmeren leer je hoe je apps, websites en desktopapplicaties bedenkt, ontwikkelt en vormgeeft. Je integreert databanken, cloud en AI-services en krijgt inzicht in hoe digital agencies, softwarebedrijven en IT-afdelingen van bedrijven werken." />
           <meta property="og:type" content="website" />
           <meta property="og:url" content="https://www.pgm.gent/curriculum/" />
           <meta property="og:image" content="https://www.pgm.gent/curriculum/pgm.jpg" />
+          <meta name="twitter:card" content="summary_large_image" />
+          <meta property="twitter:domain" content="pgm.gent" />
+          <meta property="twitter:url" content="https://www.pgm.gent/curriculum/" />
+          <meta name="twitter:title" content="PGM Curriculum" />
+          <meta name="twitter:description" content="Ontdek het curriculum voor de opleiding Graduaat Programmeren aan Arteveldehogeschool. Ben jij een doener met talent in programmeren en een passie voor digitale technologie? In het graduaat Programmeren leer je hoe je apps, websites en desktopapplicaties bedenkt, ontwikkelt en vormgeeft. Je integreert databanken, cloud en AI-services en krijgt inzicht in hoe digital agencies, softwarebedrijven en IT-afdelingen van bedrijven werken." />
+          <meta name="twitter:image" content="https://www.pgm.gent/curriculum/pgm.jpg" />
         </Helmet>
         <div className={`flex flex-row flex-wrap items-center justify-end p-2`}>
           <select onChange={(ev) => handleChangeCurriculum(ev)} className={`bg-gray-50 border border-ahs_blue-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-ahs_blue-500 dark:focus:border-ahs_blue-500 mx-2`}>
