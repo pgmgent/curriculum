@@ -14,6 +14,8 @@ import dataCurriculum202527 from './data/curriculum_2025_27.json';
 import dataLearningLines from './data/learning_lines.json';
 import dataSpecializations from './data/specializations.json';
 
+const META_TITLE = `Curriculum | Graduaat Programmeren | Arteveldehogeschool`;
+const META_DESCRIPTION = `Leer apps, websites en desktopapplicaties ontwikkelen in het Graduaat Programmeren. Integreer databanken, cloud & AI-services. Ideaal voor doeners met passie voor digitale technologie en programmeren.`;
 
 function App() {
   const [dataCurriculum, setDataCurriculum] = useState<Curriculum>(dataCurriculum202527);
@@ -71,15 +73,18 @@ function App() {
     <>
       <div className="App">
         <Helmet>
-          <title>Curriculum | Graduaat Programmeren | Arteveldehogeschool</title>
-          <meta name="description" content="Ontdek het curriculum voor de opleiding Graduaat Programmeren aan Arteveldehogeschool. Ben jij een doener met talent in programmeren en een passie voor digitale technologie? In het graduaat Programmeren leer je hoe je apps, websites en desktopapplicaties bedenkt, ontwikkelt en vormgeeft. Je integreert databanken, cloud en AI-services en krijgt inzicht in hoe digital agencies, softwarebedrijven en IT-afdelingen van bedrijven werken." />
+          <meta charSet="utf-8" />
+          <meta name="viewport" content="width=device-width, initial-scale=1" />
+          <title>{META_TITLE}</title>
+          <link rel="canonical" href="http://www.pgm.gent/curriculum" />
+          <meta name="description" content={META_DESCRIPTION} />
           <meta name="keywords" content={keywords.join(", ")} />
           <meta property="og:url" content="https://www.pgm.gent/curriculum/" />
-          <meta property="og:site_name" content="Graduaat Programmeren | Arteveldehogeschool" />
+          <meta property="og:site_name" content={META_TITLE} />
           <meta property="og:locale" content="nl_BE" />
           <meta property="og:type" content="website" />
-          <meta property="og:title" content="Curriculum | Graduaat Programmeren | Arteveldehogeschool" />
-          <meta property="og:description" content="Ontdek het curriculum voor de opleiding Graduaat Programmeren aan Arteveldehogeschool. Ben jij een doener met talent in programmeren en een passie voor digitale technologie? In het graduaat Programmeren leer je hoe je apps, websites en desktopapplicaties bedenkt, ontwikkelt en vormgeeft. Je integreert databanken, cloud en AI-services en krijgt inzicht in hoe digital agencies, softwarebedrijven en IT-afdelingen van bedrijven werken." />
+          <meta property="og:title" content={META_TITLE} />
+          <meta property="og:description" content={META_DESCRIPTION} />
           <meta property="og:image" content="https://www.pgm.gent/curriculum/pgm.jpg" />
           <meta property="og:image:width" content="1200" />
           <meta property="og:image:height" content="630" />
@@ -88,8 +93,8 @@ function App() {
           <meta property="twitter:card" content="summary_large_image" />
           <meta property="twitter:domain" content="pgm.gent" />
           <meta property="twitter:url" content="https://www.pgm.gent/curriculum/" />
-          <meta property="twitter:title" content="PGM Curriculum" />
-          <meta property="twitter:description" content="Ontdek het curriculum voor de opleiding Graduaat Programmeren aan Arteveldehogeschool. Ben jij een doener met talent in programmeren en een passie voor digitale technologie? In het graduaat Programmeren leer je hoe je apps, websites en desktopapplicaties bedenkt, ontwikkelt en vormgeeft. Je integreert databanken, cloud en AI-services en krijgt inzicht in hoe digital agencies, softwarebedrijven en IT-afdelingen van bedrijven werken." />
+          <meta property="twitter:title" content={META_TITLE} />
+          <meta property="twitter:description" content={META_DESCRIPTION} />
           <meta property="twitter:image" content="https://www.pgm.gent/curriculum/pgm.jpg" />
         </Helmet>
         <div className={`flex flex-row flex-wrap items-center justify-end p-2`}>
